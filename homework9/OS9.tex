@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\graphicspath{ {images/} }
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{0pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+
+\pgfpagesuselayout{boxed}
+
+\title{In The Name Of God}
+\author{Sajjad Saadatpour}
+\date{December 2020}
+
+\begin{document}
+    \maketitle
+    \section*{Introduction}
+       This is OSLab HomeWork9 File.
+       
+    \begin{center}
+        \includegraphics[width=50mm]{Linux-logo.png}
+    \end{center}
+    
+    \begin{center}
+        \begin{tabular}{ |c|c|c| } 
+            \hline
+                A11 & A12 & A13 \\ \hline
+                A21 & A22 & A23 \\ \hline
+                A31 & A32 & A33 \\ 
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    \[ ax^2 + bx + c = 0 \]
+    \[
+        \lim_{h \rightarrow 0 } \frac{f(x+h)-f(x)}{h}
+    \]
+    
+    \begin{lstlisting}
+        #include "iostream"
+       
+        using namespace std;
+        int main()
+        {
+            int a[10];
+            for(int i = 0; i<10 ; i++)
+                cin >>a[i];
+        }
+
+    \end{lstlisting}
+
+% \section{Introduction}
+
+\end{document}
