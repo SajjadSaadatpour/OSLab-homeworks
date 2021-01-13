@@ -2,7 +2,7 @@
 
 if [ $1 == + ]
 then
-	echo .
+	echo "$2 + $3"
 elif [ $2 == yes ]
 then
 	echo You may go to the party but be back before midnight.
